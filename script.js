@@ -8,12 +8,13 @@ $(document).ready(function() {
 		$(this).removeClass("makeBorder").addClass("makeRed");// this function is same as the above one, however, classes "makeRed" and "makeBorder" are swaped to give the effect.
 	});
 
-    $("button").click(function() {
-		$("p").slideToggle(2000);
+	
+	$("#button1").click(function(){
+	   $("#para1").fadeIn(2000).fadeOut(2000);
 	});
 	
-	$("button").click(function(){
-	   $("p").hide(2000).show(2000); 
+	$("#button2").click(function(){
+	   $("#para2").fadeIn(2000).fadeOut(2000);
 	});
   
 });
